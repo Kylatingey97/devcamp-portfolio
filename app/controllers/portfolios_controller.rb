@@ -3,6 +3,10 @@ class PortfoliosController < ApplicationController
     @portfolio_items = Portfolio.all
   end
 
+  def angular
+    @angular_portfolio_items = Portfolio.angular
+  end
+
   def new
     @portfolio_item = Portfolio.new
   end
@@ -48,7 +52,7 @@ class PortfoliosController < ApplicationController
 
     # Redirect
     respond_to do |format|
-      format.html { redirect_to portfolios_url, notice: 'Record was successfully destroyed.' }
+      format.html { redirect_to portfolios_url, notice: 'Record was removed.' }
     end
   end
 
