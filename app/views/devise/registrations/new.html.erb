@@ -8,6 +8,10 @@
     <%= f.email_field :email, autofocus: true %>
   </div>
 
+   <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+
   <div class="field">
     <%= f.label :password %>
     <% if @minimum_password_length %>
