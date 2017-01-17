@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/Kylatingey97/ktingey_view_tool
+  revision: 2d2d1ed1bbb6719bbc7f1d8c1e55ffdc936405b8
+  specs:
+    ktingey_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -45,7 +51,7 @@ GEM
     bootstrap (4.0.0.alpha6)
       autoprefixer-rails (>= 6.0.3)
       sass (>= 3.4.19)
-    builder (3.2.2)
+    builder (3.2.3)
     byebug (9.0.6)
     coderay (1.1.1)
     coffee-rails (4.2.1)
@@ -65,7 +71,7 @@ GEM
       warden (~> 1.2.3)
     erubis (2.7.0)
     execjs (2.7.0)
-    ffi (1.9.14)
+    ffi (1.9.17)
     friendly_id (5.1.0)
       activerecord (>= 4.0.0)
     globalid (0.3.7)
@@ -189,6 +195,7 @@ DEPENDENCIES
   friendly_id (~> 5.1.0)
   jbuilder (~> 2.5)
   jquery-rails
+  ktingey_view_tool!
   listen (~> 3.0.5)
   pg (~> 0.18)
   pry-byebug
