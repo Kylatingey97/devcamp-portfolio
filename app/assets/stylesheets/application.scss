@@ -1,4 +1,5 @@
 @import "bootstrap";
+@import "gritter";
 
 /*
  * Globals
@@ -29,7 +30,6 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
 }
 body {
   color: #fff;
@@ -157,7 +157,7 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 55rem;
+    width: 65rem;
   }
 }
 
@@ -165,18 +165,18 @@ body {
  * Custom Styles
  */
 
- .card-block {
+.card-block {
   color: black;
   text-align: left;
- }
+}
 
- .auth-links a {
-   color: black;
- }
+.auth-links a {
+  color: black;
+}
 
- .register-text {
- text-align: right;
- }
+.register-text {
+  text-align: right;
+}
 
 .login > .card {
   width: 22rem;
@@ -188,4 +188,43 @@ body {
   margin-left: 15px;
   margin-right: 15px;
 }
+
+#background {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: image-url('home_bg.png') no-repeat;
+  background-size: cover;
+}
+
+.app-footer {
+  color: white;
+}
+
+.tech-news {
+  color: black;
+  margin: 20px;
+}
+
+.tech-news a {
+  color: green;
+}
+
+.tech-news > .card {
+  padding: 30px;
+}
+
+
+
+
+
+
+
 

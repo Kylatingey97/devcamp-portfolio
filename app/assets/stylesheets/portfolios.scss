@@ -1,5 +1,6 @@
 @import "bootstrap";
 @import "jquery-ui";
+@import "gritter";
 
 body {
   min-height: 75rem; /* Can be removed; just added for demo purposes */
@@ -62,6 +63,6 @@ footer p {
 
 /* Custom styles */
 
-.portfolio-form {
-  padding: 20px;
+.portfolio-container {
+  padding: 30px;
 }

@@ -1,12 +1,12 @@
 module ApplicationHelper
-  def login_helper style = ' '
+  def login_helper style = ''
     if current_user.is_a?(GuestUser)
-      (link_to "Register", new_user_registration_path, class: style) + 
+      (link_to "Register", new_user_registration_path, class: style) +
       " ".html_safe +
       (link_to "Login", new_user_session_path, class: style)
-    else 
+    else
       link_to "Logout", destroy_user_session_path, method: :delete, class: style
-    end 
+    end
   end
 
   def source_helper(layout_name)
@@ -42,6 +42,10 @@ module ApplicationHelper
         url: portfolios_path,
         title: 'Portfolio'
       },
+      {
+        url: tech_news_path,
+        title: 'Tech News'
+      },
     ]
   end
 
@@ -55,8 +59,20 @@ module ApplicationHelper
     nav_links.html_safe
   end
 
-  def active? path 
-    "active" if current_page? path 
+  def active? path
+    "active" if current_page? path
+  end
+
+  def alerts
+    alert = (flash[:alert] || flash[:error] || flash[:notice])
+
+    if alert
+      alert_generator alert
+    end
+  end
+
+  def alert_generator msg
+    js add_gritter(msg, title: "Kyla Tingey Portfolio", sticky: false)
   end
 
 end
