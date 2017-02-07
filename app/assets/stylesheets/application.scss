@@ -213,12 +213,12 @@ body {
   margin: 20px;
 }
 
-.tech-news a {
-  color: green;
-}
-
 .tech-news > .card {
   padding: 30px;
+}
+
+.tech-news a {
+  color: green;
 }
 
 .app-card-container {
@@ -230,12 +230,18 @@ body {
   padding: 40px;
 }
 
+.profile-img {
+  border: 1px solid grey;
+}
+
 .app-card-container a {
   color: blue;
 }
 
-
-
+.card-block {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
 
 
 
