@@ -221,17 +221,19 @@ body {
   padding: 30px;
 }
 
-.about-img {
-  background: image-url('profile.jpg') no-repeat center center fixed;
-  background-size: cover;
+.app-card-container {
+  color: black;
+  text-align: left;
 }
-  
-.about-content {
-  width: 100%;
-  text-align: center;
-  margin-bottom: 40px;
-  padding: 200px 0px 200px 800px;
+
+.app-card-container > .card {
+  padding: 40px;
 }
+
+.app-card-container a {
+  color: blue;
+}
+
 
 
 
