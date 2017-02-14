@@ -138,7 +138,11 @@ h6, .h6, {
  */
 
  .inner-cover {
-  padding-top: 10px;
+  background: darkgrey;
+  padding: 10px;
+  border: double;
+  margin-left: 300px;
+  margin-right: 300px;
  }
 
 .cover {
